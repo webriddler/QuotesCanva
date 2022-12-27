@@ -20,7 +20,7 @@ function getRelData(data){
 
 
 function generateData(quotesData){
-    let randomNum = Math.floor(Math.random() * (49 - 0 + 1) + 0);
+    let randomNum = Math.floor(Math.random() * (61 - 0 + 1) + 0);
     let data = quotesData['rel'][`qu${randomNum}`];
     backImage.style.fontFamily = 'Permanent Marker';
     setTimeout(writeToCanva, 2000, data);  
