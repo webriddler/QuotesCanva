@@ -72,15 +72,15 @@ function startInterval(upto = 0)
 {
   let counts=setInterval(updated);
         function updated(){
-            progressBar.style.width= `${parseInt((++upto)) / 28}%`;
+            progressBar.style.width= `${parseInt((++upto)) / 37}%`;
             if(upto==150)
             {
                 textPanel.style.opacity = 1
             }
-            if(upto == 2000){
+            if(upto == 2300){
                 nextButton.style.display = 'block';
             }
-            if(upto==3000 &&  !settingCanva.classList.contains('show'))
+            if(upto==4000 &&  !settingCanva.classList.contains('show'))
             {
                 clearInterval(counts);
                 window.location.reload();
