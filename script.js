@@ -11,24 +11,24 @@ fetch("./wallpaper/relationship/quotes.json")
     return response.json();
     })
     .then(data=> {
-        getRelData(data)
+        getRelData(data, dataType = 'relationship')
     });
 
-function getRelData(data){
-    quotesData['rel'] = data;
-    generateData(quotesData)
+function getRelData(data, dataType){
+    quotesData[dataType] = data;
+    generateData(quotesData, dataType)
 }
 
 
-function generateData(quotesData){
-    let randomNum = Math.floor(Math.random() * 62);
-    let data = quotesData['rel'][`qu${randomNum || 1}`];
+function generateData(quotesData, dataType){
+    let randomNum = Math.floor(Math.random() * Object.keys(quotesData[dataType]).length);
+    let data = quotesData[dataType][`qu${randomNum || 1}`];
     backImage.style.fontFamily = 'Permanent Marker';
-    setTimeout(writeToCanva, 2000, data);
+    setTimeout(writeToCanva, 2000, data, dataType);
 }
 
-function writeToCanva(imageArrayData){
-    backImage.style.backgroundImage = `url('./wallpaper/relationship/${imageArrayData[0]}')`;
+function writeToCanva(imageArrayData, dataType){
+    backImage.style.backgroundImage = `url('./wallpaper/${dataType}/${imageArrayData[0]}')`;
     quoteMessgae.innerText = imageArrayData[1];
     let canvaHeight = getComputedStyle(document.getElementById("textPanel")).height
     canvaHeight = parseInt(canvaHeight.substring(0,3))
