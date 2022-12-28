@@ -5,6 +5,7 @@ const textPanel = document.getElementById('textPanel')
 const progressBar = document.getElementById('progressBar')
 const nextButton = document.getElementById("nextButton")
 
+
 fetch("./wallpaper/relationship/quotes.json")
     .then(response => {
     return response.json();
@@ -20,20 +21,24 @@ function getRelData(data){
 
 
 function generateData(quotesData){
-    let randomNum = Math.floor(Math.random() * (61 - 0 + 1) + 0);
-    let data = quotesData['rel'][`qu${randomNum}`];
+    let randomNum = Math.floor(Math.random() * 62);
+    let data = quotesData['rel'][`qu${randomNum || 1}`];
     backImage.style.fontFamily = 'Permanent Marker';
-    setTimeout(writeToCanva, 2000, data);  
+    setTimeout(writeToCanva, 2000, data);
 }
 
 function writeToCanva(imageArrayData){
     backImage.style.backgroundImage = `url('./wallpaper/relationship/${imageArrayData[0]}')`;
     quoteMessgae.innerText = imageArrayData[1];
-    let lengthQuote = quoteMessgae.innerText.length;
-    if (lengthQuote > 60){
-        quoteMessgae.style.fontSize = '1.87rem';
+    let canvaHeight = getComputedStyle(document.getElementById("textPanel")).height
+    canvaHeight = parseInt(canvaHeight.substring(0,3))
+    console.log(canvaHeight)
+    if (canvaHeight > 380 && canvaHeight < 550){
+        quoteMessgae.style.fontSize = '2rem';
     }
-    textPanel.style.display = 'block';
+    else if (canvaHeight >= 550){
+        quoteMessgae.style.fontSize = '1.88rem';
+    }
     startInterval()
 }
 
@@ -43,6 +48,10 @@ function startInterval()
         let upto=0;
         function updated(){
             progressBar.style.width= `${parseInt((++upto)) / 28}%`;
+            if(upto==150)
+            {
+                textPanel.style.opacity = 1
+            }
             if(upto==3000)
             {
                 clearInterval(counts);
