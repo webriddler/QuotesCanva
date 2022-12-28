@@ -62,10 +62,14 @@ function writeToCanva(imageArrayData, dataType){
     if (canvaHeight > 380 && canvaHeight < 550){
         quoteMessgae.style.fontSize = '2rem';
     }
-    else if (canvaHeight >= 550){
+    else if (canvaHeight >= 550 && canvaHeight < 800){
         quoteMessgae.style.fontSize = '1.88rem';
     }
+    else if (canvaHeight >= 800){
+        quoteMessgae.style.fontSize = '1.8rem';
+    }
     startInterval(0)
+    backImage.style.opacity = 1;
 }
 
 function startInterval(upto = 0)
