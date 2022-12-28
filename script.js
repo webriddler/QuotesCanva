@@ -68,8 +68,9 @@ function writeToCanva(imageArrayData, dataType){
     else if (canvaHeight >= 800){
         quoteMessgae.style.fontSize = '1.8rem';
     }
-    startInterval(0)
     backImage.style.opacity = 1;
+    startInterval(0)
+    
 }
 
 function startInterval(upto = 0)
@@ -77,7 +78,7 @@ function startInterval(upto = 0)
   let counts=setInterval(updated);
         function updated(){
             progressBar.style.width= `${parseInt((++upto)) / 37}%`;
-            if(upto==150)
+            if(upto==200)
             {
                 textPanel.style.opacity = 1
             }
