@@ -1,3 +1,7 @@
+body{
+  margin: 0;
+  padding: 0;
+}
 #panel{
     background-color: black;
     background-size: cover;
