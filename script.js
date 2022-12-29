@@ -50,7 +50,7 @@ function generateData(quotesData, dataType){
     let randomNum = Math.floor(Math.random() * Object.keys(quotesData[dataType]).length);
     let data = quotesData[dataType][`qu${randomNum || 1}`];
     backImage.style.fontFamily = 'Permanent Marker';
-    setTimeout(writeToCanva, 2000, data, dataType);
+    setTimeout(writeToCanva, 1500, data, dataType);
 }
 
 function writeToCanva(imageArrayData, dataType){
@@ -68,17 +68,17 @@ function writeToCanva(imageArrayData, dataType){
     else if (canvaHeight >= 800){
         quoteMessgae.style.fontSize = '1.8rem';
     }
-    backImage.style.opacity = 1;
-    startInterval(0)
+    setTimeout(startInterval, 2000, 0);
     
 }
 
 function startInterval(upto = 0)
 {
   let counts=setInterval(updated);
+  backImage.style.opacity = 1;
         function updated(){
             progressBar.style.width= `${parseInt((++upto)) / 37}%`;
-            if(upto==200)
+            if(upto==600)
             {
                 textPanel.style.opacity = 1
             }
