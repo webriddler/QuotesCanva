@@ -11,7 +11,7 @@
     "qu10": ["mar_12.jpg","Contrary to popular belief, I know exactly what I’m doing."],
     "qu11": ["mar_48.jpg","Part of the journey is the end."],
     "qu12": ["mar_49.jpg","When I drift off, I will dream about you. It’s always you."],
-    "qu13": ["mar_11.jpg","The truth is… I am Iron Man."],
+    "qu13": ["mar_15.jpg","The truth is… I am Iron Man."],
     "qu14": ["mar_30.jpg","Is it better to be feared or respected? I say, is it too much to ask for both?"],
     "qu15": ["mar_28.jpg","No amount of money ever bought a second of time."],
     "qu16": ["mar_26.jpg","We never lose our demons. We only learn to live above them."],
@@ -37,7 +37,7 @@
     "qu37": ["mar_36.jpg","Today, we don’t fight for one life, we fight for all of them"],
     "qu38": ["mar_36.jpg","This is the fight of our lives, and we’re going to win. Whatever It Takes"],
     "qu39": ["mar_42.png"," Not a perfect Soldier, but a Good Man"],
-    "qu40": ["mar_35.jpg","Cause if we can’t protect the Earth, you can be damn sure we’ll avenge it"],
+    "qu40": ["mar_35.jpg","If we can’t protect the earth, we’ll avenge it!"],
     "qu41": ["mar_34.jpg","If we’re going to win this fight, some of us might have to lose it."],
     "qu42": ["mar_45.jpg","I still believe in heroes."],
     "qu43": ["mar_10.jpg","It’s not about saving our world. It’s about saving theirs."],
@@ -46,7 +46,7 @@
     "qu46": ["mar_4.jpg","Genius, Billionaire, Playboy, Philanthropist"],
     "qu47": ["mar_6.jpg","Trust yourself, trust your power – that’s how you stop it."],
     "qu48": ["mar_51.jpg","The hardest choices require the strongest wills."],
-    "qu49": ["mar_51.jpg","Reality is often disappointing."],
+    "qu49": ["mar_56.jpg","Reality is often disappointing."],
     "qu50": ["mar_8.jpg","What Did It Cost? Everything."],
     "qu51": ["mar_51.jpg","We all are bad, in someone's story."],
     "qu52": ["mar_5.jpg","Do not reject the possibility."],
@@ -62,5 +62,19 @@
     "qu62": ["mar_1.jpg","The lesson is that you can still make mistakes and be forgiven."],
     "qu63": ["mar_12.jpg","It’s not enough to be against something. You have to be for something better."],
     "qu64": ["mar_52.jpg","It’s an imperfect world, but it’s the only one we’ve got"],
-    "qu65": ["mar_50.jpg","I’d rather be a good man than a great king"]     
+    "qu65": ["mar_50.jpg","I’d rather be a good man than a great king"],
+    "qu66": ["mar_55.jpg","The thing that scares you the most is your obstacle. Find it... smash it!"],
+    "qu67": ["mar_44.jpg","No matter how your day starts, always find time to make it great."],
+    "qu68": ["mar_32.jpg","Be strong you never know who you are inspiring"],
+    "qu69": ["mar_54.jpg","Intelligence is a privilege, and it needs to be used for the greater good of people."],
+    "qu70": ["mar_40.jpg","Failure is not the end of your, it is the start of your new comback story."],
+    "qu71": ["mar_56.jpg","I ignored my destiny once, I cannot do that again."],
+    "qu72": ["mar_32.jpg","I shouldn’t be alive unless it was for a reason"],
+    "qu73": ["mar_57.jpg","I did not ask for your trust. I demand only your obedience."],
+    "qu74": ["mar_19.jpg","You have the power to change your life at any given moment.. Never forget that."],
+    "qu75": ["mar_30.jpg","Most people don't like you. Give them more reason not to."],
+    "qu76": ["mar_54.jpg","I am Iron Man.. The suit and I are one.."],
+    "qu77": ["mar_59.jpg","Do what you can, Where you are, with what you have."]
+    
+    
 }
