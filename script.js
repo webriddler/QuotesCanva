@@ -1,25 +1,21 @@
-const quoteMessgae = document.getElementById('quote')
-const backImage = document.getElementById("panel")
-const textPanel = document.getElementById('textPanel')
-const progressBar = document.getElementById('progressBar')
-const nextButton = document.getElementById("nextButton")
-const settingCanva = document.getElementById("offcanvasBottom")
-const marvelButton = document.getElementById("marBtn")
-const relButton = document.getElementById("relBtn")
-
+const quoteMessgae = document.getElementById('quote');
+const backImage = document.getElementById("panel");
+const textPanel = document.getElementById('textPanel');
+const progressBar = document.getElementById('progressBar');
+const nextButton = document.getElementById("nextButton");
+const settingCanva = document.getElementById("offcanvasBottom");
+const allButtons = document.querySelectorAll('.btn-lg');
 
 const quoteType = localStorage.getItem('quoteType')
 if(quoteType){
     $(document).ready(function (){
-        if (quoteType == 'marvel'){
-            marvelButton.setAttribute("disabled", "disabled");
-            marvelButton.style = "opacity:0.4";
-        }
-        else{
-            relButton.setAttribute("disabled", "disabled");
-            relButton.style = "opacity:0.4";
-        
-        }
+
+        [...allButtons].map((btn) => {
+            if(btn.value === quoteType){
+                btn.setAttribute("disabled", "disabled");
+                btn.style = "opacity:0.4";
+            }
+        })
     })
     
     fetch(`./wallpaper/${quoteType}/quotes.json`)
